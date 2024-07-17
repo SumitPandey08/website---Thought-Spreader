@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* Style the form container */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        /* Style input fields */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        /* Style submit button */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 155px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        header {
+    background-color: #0074D9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0074D9;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section headings */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333; /* Default text color */
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        margin-bottom: 10px;
+    }
+}
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Thought Spreader</h1>
+        <p>Your gateway to inspiring ideas!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="thought.html">Home</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+   <h2>Registration</h2>
+    <form action="process_registration.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <input type="submit" value="Register">
+    </form>
+    
+    
+</body>
+</html>
